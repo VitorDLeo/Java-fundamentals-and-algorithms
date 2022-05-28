@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class input {
@@ -10,6 +11,7 @@ public class input {
         int y;
         double z;
 
+        Locale.setDefault(Locale.US);
         x = sc.next();
         y = sc.nextInt();
         z = sc.nextDouble();

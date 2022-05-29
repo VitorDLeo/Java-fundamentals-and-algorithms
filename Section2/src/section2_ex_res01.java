@@ -20,5 +20,6 @@ public class section2_ex_res01 {
         System.out.printf("AREA = %.2f%n", area);
         System.out.printf("PRECO = %.2f%n", preco);
 
+        sc.close();
     }
 }

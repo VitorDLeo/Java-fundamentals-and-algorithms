@@ -21,7 +21,10 @@ public class Ex_resolved_02 {
             age = sc.nextInt();
         }
         
-        mediaAge = sumAge / count;
+        if (count > 0){
+            mediaAge = sumAge / count;
+        }
+        
         System.out.println("Sum Age: " + mediaAge);
     }   
 }

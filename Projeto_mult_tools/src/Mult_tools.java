@@ -5,7 +5,7 @@ public class Mult_tools {
     public static void main(String[] args) {
 
         int option;
-        double a, b, mult, div, raiz, pot, soma, sub;
+        double a, b, h, mult, div, raiz, pot, soma, sub, area;
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -13,8 +13,8 @@ public class Mult_tools {
         System.out.println("--------------------------");
         System.out.println("Escolha a sua opcao");
         System.out.println("[ 1 ] Calculadora");
+        System.out.println("[ 2 ] Geometria");
         System.out.println("[ 9 ] Sair");
-
 
         soma = 0;
         pot = 0;
@@ -22,11 +22,10 @@ public class Mult_tools {
         sub = 0;
         raiz = 0;
 
-
         option = sc.nextInt();
 
-        if (option == 1){
-            while (option != 5){
+        if (option == 1) {
+            while (option != 5) {
                 System.out.println("------------------");
                 System.out.println("[ 1 ] Soma");
                 System.out.println("[ 2 ] Subtracao");
@@ -40,7 +39,7 @@ public class Mult_tools {
                 a = sc.nextDouble();
                 b = sc.nextDouble();
 
-                if (option == 1){
+                if (option == 1) {
                     soma = a + b;
                     System.out.println("soma = " + soma);
                     System.out.println("Digite 7 para fechar");
@@ -63,7 +62,29 @@ public class Mult_tools {
                 }
                 option = sc.nextInt();
             }
-        }
-    }
 
+        if (option == 2) {
+            while (option != 5){
+                System.out.println("--------------------");
+                System.out.println("Bem vindo ao menu de Geometria");
+                System.out.println("Escolha qual figura geometrica");
+                System.out.println("[ 1 ] Quadrado");
+                System.out.println("[ 2 ] Triangulo");
+                System.out.println("[ 3 ] Retangulo");
+                System.out.println("[ 4 ] Circulo");
+                System.out.println("[ 5 ] Sair");
+                System.out.println("--------------------");
+                option = sc.nextInt();
+                if (option == 1){
+                    System.out.println();
+                    a = sc.nextDouble();
+                    area = a * a;
+                    System.out.println("Area do quadrado " + area);
+                } else if (option == 2) {
+                    b = sc.nextDouble();
+                }
+            }
+        }
+      }
+    }
 }

@@ -76,12 +76,17 @@ public class Mult_tools {
                 System.out.println("--------------------");
                 option = sc.nextInt();
                 if (option == 1){
-                    System.out.println();
+                    System.out.println("Digite o valor do lado do quadrado");
                     a = sc.nextDouble();
                     area = a * a;
                     System.out.println("Area do quadrado " + area);
                 } else if (option == 2) {
+                    System.out.println("Digite o valor da base(b): ");
                     b = sc.nextDouble();
+                    System.out.println("Digite o valor da altura(h): ");
+                    h = sc.nextDouble();
+                    area = (b * h) / 2.00;
+                    System.out.printf("AREA TRIANGULO = %.2f%n", area);
                 }
             }
         }

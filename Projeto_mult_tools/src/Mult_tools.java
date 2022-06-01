@@ -5,7 +5,8 @@ public class Mult_tools {
     public static void main(String[] args) {
 
         int option;
-        double a, b, h, mult, div, raiz, pot, soma, sub, area;
+        double a, b, h, raio,mult, div, raiz, pot, soma, sub, area;
+        double pi = 3.14;
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -21,11 +22,12 @@ public class Mult_tools {
         mult = 0;
         sub = 0;
         raiz = 0;
+        raio = 0;
+        area = 0;
 
         option = sc.nextInt();
 
         if (option == 1) {
-            while (option != 5) {
                 System.out.println("------------------");
                 System.out.println("[ 1 ] Soma");
                 System.out.println("[ 2 ] Subtracao");
@@ -61,10 +63,7 @@ public class Mult_tools {
                     option = sc.nextInt();
                 }
                 option = sc.nextInt();
-            }
-
-        if (option == 2) {
-            while (option != 5){
+        }else if (option == 2) {
                 System.out.println("--------------------");
                 System.out.println("Bem vindo ao menu de Geometria");
                 System.out.println("Escolha qual figura geometrica");
@@ -75,7 +74,7 @@ public class Mult_tools {
                 System.out.println("[ 5 ] Sair");
                 System.out.println("--------------------");
                 option = sc.nextInt();
-                if (option == 1){
+        if (option == 1){
                     System.out.println("Digite o valor do lado do quadrado");
                     a = sc.nextDouble();
                     area = a * a;
@@ -87,9 +86,20 @@ public class Mult_tools {
                     h = sc.nextDouble();
                     area = (b * h) / 2.00;
                     System.out.printf("AREA TRIANGULO = %.2f%n", area);
+                } else if (option == 3) {
+                    System.out.println("Digite o valor da base(b)");
+                    b = sc.nextDouble();
+                    System.out.println("Digite o valor da altura(h)");
+                    h = sc.nextDouble();
+                    area = b * h;
+                    System.out.printf("AREA RETANGULO = %.2f%n", area);
+                } else if (option == 4) {
+                    System.out.println("Digite o valor do Raio(R): ");
+                    raio = sc.nextDouble();
+                    area = pi * Math.pow(raio, 2.00);
+                    System.out.printf("AREA DO CIRCULO = %.2f%n", area);
                 }
-            }
+                option = sc.nextInt();
         }
-      }
     }
 }

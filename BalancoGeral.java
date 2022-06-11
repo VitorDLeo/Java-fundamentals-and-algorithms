@@ -25,6 +25,6 @@ public class BalancoGeral {
 
         System.out.printf("O valor total gasto foi R$ %.2f%n", gastoTotal);
         System.out.printf("A media de valor gasto foi R$ %.2f", mediaGasto);
-        
+
     }
 }
